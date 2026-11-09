@@ -114,6 +114,7 @@ function fn(n){return Math.round(n).toLocaleString('ko-KR')}
 function ddc(id){return '<td class="dd" id="c-'+id+'"><span id="v-'+id+'"></span><b class="ar" id="ar-'+id+'">▼</b><div class="list" id="l-'+id+'"></div></td>'}
 var W=[34,56,120,260,64,64,60,64,64,60,56,56,56,62,64],h='<colgroup>'+W.map(function(w){return '<col style="width:'+w+'px">'}).join('')+'</colgroup>';
 h+='<tr><td class="nt" colspan="15">※본 자료는 참고용입니다. 실제 지급수수료와 차이가 발생할 수 있으며, 지급을 보증하지 않습니다.</td></tr>';
+h+='<tr><td class="nt" colspan="15">※자주 업데이트 되오니, 자료 사용하실 때마다 다운로드를 통한 최신화 부탁드립니다.</td></tr>';
 h+='<tr><td class="ttl" colspan="4" rowspan="2">더블유에셋 수수료 시뮬레이션</td><td class="rl">지급율 ▶</td>'+ddc('rate').replace('class="dd"','class="dd yel" colspan="2"')+'<td class="gap" colspan="8"></td></tr>';
 h+='<tr><td class="hd" colspan="2">1차년</td><td class="hd" rowspan="2">합계</td><td class="hd" colspan="2">2차년</td><td class="hd" rowspan="2">합계</td><td class="hd" colspan="4">3차년 이후</td><td class="hd" rowspan="2">총계</td></tr>';
 h+='<tr>'+['No.','생/손','보험사명','상품명','익월_FC','1차년_FC'].map(function(x){return '<td class="hd">'+x+'</td>'}).join('')+['13회차_FC','2차년_FC'].map(function(x){return '<td class="hd">'+x+'</td>'}).join('')+['3차년_FC','4차년_FC','5차년_FC','6차년이후_FC'].map(function(x){return '<td class="hd">'+x+'</td>'}).join('')+'</tr>';
